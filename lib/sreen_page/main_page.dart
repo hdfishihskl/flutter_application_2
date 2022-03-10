@@ -19,8 +19,8 @@ class MainPage extends StatelessWidget {
               const SizedBox(height: 60.0),
               const CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage(
-                    'tt.jpg'),
+                backgroundImage: NetworkImage(
+                    'https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1579436208.1638835200'),
               ),
               const Text(
                 'En Eangly',
@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
               ),
               const Text(
                 'Email:Eanglyen82@gmail.com',
-                style: TextStyle(fontSize: 15.0),
+                style: TextStyle(fontSize: 10.0),
               ),
               const SizedBox(height: 50.0),
               ListTile(
