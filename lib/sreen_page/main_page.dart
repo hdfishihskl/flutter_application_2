@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
               ),
               const Text(
                 'Email:Eanglyen82@gmail.com',
-                style: TextStyle(fontSize: 10.0),
+                style: TextStyle(fontSize: 15.0),
               ),
               const SizedBox(height: 50.0),
               ListTile(
