@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/sreen_page/schoolpage.dart';
+import 'contact.dart';
+import 'detail.dart';
+import 'setting.dart';
 import 'homepage.dart';
 import 'office.dart';
+
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
 
@@ -68,7 +72,9 @@ class MainPage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) {
-                      return const SchoolPage();
+                      return const SchoolPage(
+                        title: "School",
+                      );
                     }),
                   );
                 },
@@ -78,19 +84,47 @@ class MainPage extends StatelessWidget {
               ),
               const Divider(),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                 Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return const SettingPage(
+                        title: "Setting",
+                      );
+                    }),
+                  );
+                },
                 leading: const Icon(Icons.settings_outlined),
                 title: const Text('Setting'),
                 trailing: const Icon(Icons.arrow_forward_ios),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return const DetailPage(
+                        title: "About Us",
+                      );
+                    }),
+                  );
+                },
                 leading: const Icon(Icons.info_outline),
                 title: const Text('About Us'),
                 trailing: const Icon(Icons.arrow_forward_ios),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return const ContactPage(
+                        title: "Contact",
+                      );
+                    }),
+                  );},
                 leading: const Icon(Icons.call_outlined),
                 title: const Text('Contact'),
                 trailing: const Icon(Icons.arrow_forward_ios),
