@@ -38,7 +38,7 @@ class MainPage extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) {
                       return const HomePage(
-                        title: 'Home Page',
+                        title: "Home Page",
                       );
                     }),
                   );
