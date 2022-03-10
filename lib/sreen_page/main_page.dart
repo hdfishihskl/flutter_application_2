@@ -51,6 +51,7 @@ class MainPage extends StatelessWidget {
                 leading: const Icon(Icons.home_outlined),
                 title: const Text('Home'),
                 trailing: const Icon(Icons.arrow_forward_ios),
+                
               ),
               ListTile(
                 onTap: () {
