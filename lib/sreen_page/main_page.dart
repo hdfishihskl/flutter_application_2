@@ -13,6 +13,7 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.pinkAccent,
         title: const Text('My Page'),
         centerTitle: true,
       ),
@@ -24,7 +25,7 @@ class MainPage extends StatelessWidget {
               const CircleAvatar(
                 radius: 50.0,
                 backgroundImage: NetworkImage(
-                    'https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.2.1579436208.1638835200'),
+                    'https://1j4pyr7d8sp3b7kxd2d9shhe-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/play-indoor-spring-break-kids-activities-dubai-1024x796.jpg'),
               ),
               const Text(
                 'En Eangly',
